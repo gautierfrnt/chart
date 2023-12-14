@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Chart JS</title>
+</head>
+<body>
+
+        <div class="container">
+            <h1 class="fontsize2">Durée moyenne des temps de résolution par solveur (sans inclure le UNKNOW)</h1>
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="container">
+            <h1 class="fontsize2">Nombre de problème non-résolu des temps de résolution par solveur</h1>
+            <canvas id="canvasprobleme"></canvas>
+        </div>
+
+        
+        <div>
+            <h1 class="pourcentage"></h1>
+
+            <div class="solver-button">
+                <button value="ace" id="ace">Ace</button>
+                <button value="choco" id="choco">Choco</button>
+                <button value="picat" id="picat">Picat</button>
+                <button value="btd" id="btd">Btd</button>
+                <button value="cosoco" id="cosoco">Cosoco</button>
+                <button value="funscopcad" id="funscopcad">Fun-sCOP-cad</button>
+                <button value="funscopglue" id="funscopglue">Fun-sCOP-glue</button>
+                <button value="mistral" id="mistral">Mistral</button>
+                <button value="sat4jcp" id="sat4jcp">Sat4j-cp</button>
+                <button value="sat4jrs" id="sat4jrs">Sat4j-rs</button>
+            </div>
+            <div class="containerpourcentage">
+                <canvas id="canvaspourcentage"></canvas>
+            </div>
+        </div>
+  
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./probleme.js"></script> 
+    <script type="module" src="./pourcentage.js"></script> 
+
+</body>
+</html>
